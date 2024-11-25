@@ -1,0 +1,1 @@
+Yaml practice with classes.
