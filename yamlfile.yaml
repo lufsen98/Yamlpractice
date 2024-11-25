@@ -1,0 +1,41 @@
+#regular keyvalue pairs.
+School: Jensen yh
+Class: IOT24S
+city: Stockholm
+year_started: 2024
+# bool key value
+is_ongoing: true 
+#a one line string but with new line featuers for the writer but
+#the computer will read it as one line
+background: >
+  Course founded in 2024 beacuse of lack of iot & embedded
+  developers in sweden.
+#a key value pair. with \n line indents
+school history: |
+  founded in 2009
+  focuses on IT coursers.
+  based in stockholm,malmo, gothenburg.
+#list can iterate through and even save dictonaries inside as objects
+#with different elements. i guess you can iterate through the different objects
+#but not through the elements inside the objects?
+courses:
+  - Selfleadership
+  - Programming with python
+  - Programming with c/c++
+  - Projectmanagment and workingmetods
+  - IoT-arkitektur and datacommunications
+  - Programming with embedded systems.
+  - Dataplaforms,dataintegration and cloud services.
+  - Projekt 1
+  - Lia 1
+  - projekt 1
+  - lia 2
+  - projekt 2
+  - Examinasion project.
+#dictonary can reach for elements but cant iterate through
+managment_staff:
+  education leader: Marta
+  class administrator: Yvonne
+
+  
+
