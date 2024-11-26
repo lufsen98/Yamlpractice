@@ -1,8 +1,7 @@
 #include "yamlparser.hpp" 
 #include "fstream"
-YamlParser::YamlParser(std::string newFile): file(std::string newfile) {
-    File newFile -   
-    newFile.open
+YamlParser::YamlParser(std::string newFile): file(newFile) {
+    
 }
 
 
