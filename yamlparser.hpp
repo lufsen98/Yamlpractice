@@ -6,12 +6,16 @@
 
 class YamlParser {
     private:
-    std::string readString;
-    std::vector<std::string> readlist;
+    std::unordered_map<std::string, std::variant<std::string, std::vector<std::string>>> data;
 
 
     public:
+    //constructor which reads the file.
+    YamlParser(std::unordered_map<std::string, std::variant<std::string, std::vector<std::string>>> data);
 
-    Yamlparser("example.")
+    std::string getstring();
 
-}
+    
+
+
+};
