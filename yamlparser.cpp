@@ -23,6 +23,7 @@ YamlParser::YamlParser(const std::string newFile) {
         }
         //find the : char store position in variable
         //if colonposistion is in string. save string from posistion 0 to colon in key variabel
+        // substr the value on the right side of the colonposition to the end of the string.
         size_t colonposition = line.find(':');
         if(colonposition != std::string::npos){
             key = line.substr(0,colonposition); 
@@ -30,7 +31,8 @@ YamlParser::YamlParser(const std::string newFile) {
             data[key] = value;
         }
         //find the dash and store the position.
-        //check if value is empty if so its a string and substract string to vector from the daschposition if there is and dash infront of value to be stored.
+        //check if value is empty if so its a lis
+        //substract string to vector from the dashposition
         size_t dashPosition = line.find('-');
         if(value.empty()) { 
             if(dashPosition != std::string::npos){
