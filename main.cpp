@@ -3,19 +3,22 @@
 
 
 int main() {
-    
     YamlParser parser("yamlfile.yaml");
+    std::string school = parser.getString("School");
+    std::string schoolClass = parser.getString("Class");
+    std::string city = parser.getString("City");
+    int yearStarted = parser.getInt("year_started");
+    std::vector<std::string> courses = parser.getstringlist("courses");
 
-    std::string name = parser.getString("name");
-    int age = parser.getInt("age"):
-    std::vector<std::string> items = parser.getStringList("items");
+    std::cout << "School: " << school      << "\n";
+    std::cout << "Class: " << schoolClass << "\n";
+    std::cout << "City: " << city        << "\n";
+    std::cout << "yearStarted: " << yearStarted << "\n";
+    std::cout << "Courses: " << "\n";
+    for(const auto& item:courses) {
+        std::cout << "   -" << item << "\n";
+    }
 
-
-    std::cout << "Name: " <<
-    std::cout << age:
-
-
-    for (const auto &item : items) {
-        std::cout << " - " << item << std::endl;
-    } 
 }
+
+    
